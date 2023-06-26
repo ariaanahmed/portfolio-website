@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import { FaBars, FaMoon, FaSun } from 'react-icons/fa';
 import { Link, NavLink } from 'react-router-dom';
-import './Navbar.css';
 
 const Navbar = () => {
     const [isMenuOpen, setMenuOpen] = useState(false);
@@ -26,19 +25,19 @@ const Navbar = () => {
     }
 
     const navOptions = <>
-        <NavLink to='/' className={({ isActive }) => isActive ? 'custom-li text-gray-800' : 'custom-li'}>Home</NavLink>
+        <div className='flex flex-col md:flex-row sm:items-start md:items-center md:space-x-6'>
+            <NavLink to='/' className={({ isActive }) => isActive ? 'bg-gray-700 text-white block px-3 py-2 rounded-md font-semibold capitalize' : 'fw-bold text-decoration-none font-semibold capitalize px-3 py-2'}>Home</NavLink>
 
-        <NavLink to="/resume" className={({ isActive }) => isActive ? 'custom-li' : 'custom-li'}> resume</NavLink>
+            <NavLink to="/resume" className={({ isActive }) => isActive ? 'bg-gray-700 text-white block px-3 py-2 rounded-md font-semibold capitalize' : 'fw-bold text-decoration-none font-semibold capitalize px-3 py-2'}> resume</NavLink>
 
-        <NavLink to="/projects" className={({ isActive }) => isActive ? 'custom-li' : 'custom-li'}>projects</NavLink>
+            <NavLink to="/projects" className={({ isActive }) => isActive ? 'bg-gray-700 text-white block px-3 py-2 rounded-md font-semibold capitalize' : 'fw-bold text-decoration-none font-semibold capitalize px-3 py-2'}>projects</NavLink>
 
-        <NavLink to="/about" className={({ isActive }) => isActive ? 'custom-li' : 'custom-li'}>about</NavLink>
+            <NavLink to="/about" className={({ isActive }) => isActive ? 'bg-gray-700 text-white block px-3 py-2 rounded-md font-semibold capitalize' : 'fw-bold text-decoration-none font-semibold capitalize px-3 py-2'}>about</NavLink>
 
-        <Link to="/">
-            <button className="btn btn-outline btn-success text-white font-normal font-concertOne">
-                Hire me
-            </button>
-        </Link>
+            <Link to="/">
+                <button className="btn btn-outline btn-success text-white font-normal font-concertOne mt-3 mb-1 md:mb-0 md:mt-0 ">Hire me</button>
+            </Link>
+        </div>
     </>
 
     return (
@@ -68,7 +67,7 @@ const Navbar = () => {
                         <button
                             onClick={toggleMenu}
                             type="button"
-                            className="bg-gray-50 inline-flex items-center justify-center p-2 rounded-md text-gray-400  hover:text-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                            className="border inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
                             aria-controls="mobile-menu"
                             aria-expanded="false">
 
@@ -85,7 +84,7 @@ const Navbar = () => {
             </div>
             {isMenuOpen && (
                 <div className="md:hidden" id="mobile-menu">
-                    <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                    <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 ">
                         {navOptions}
                         <label className="swap swap-rotate">
                             <input type="checkbox" onChange={handleToggle} checked={theme === "light" ? false : true} />
