@@ -25,16 +25,16 @@ const Navbar = () => {
     }
 
     const navOptions = <>
-        <NavLink to='/' className={({ isActive }) => isActive ? 'bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-semibold capitalize' : 'fw-bold text-decoration-none font-semibold capitalize'}>Home</NavLink>
+        <NavLink to='/' className={({ isActive }) => isActive ? 'bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-semibold capitalize' : 'fw-bold text-decoration-none font-semibold capitalize px-3 py-2'}>Home</NavLink>
 
-        <NavLink to="/resume" className={({ isActive }) => isActive ? 'bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-semibold capitalize' : 'fw-bold text-decoration-none font-semibold capitalize'}> resume</NavLink>
+        <NavLink to="/resume" className={({ isActive }) => isActive ? 'bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-semibold capitalize' : 'fw-bold text-decoration-none font-semibold capitalize px-3 py-2'}> resume</NavLink>
 
-        <NavLink to="/projects" className={({ isActive }) => isActive ? 'bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-semibold capitalize' : 'fw-bold text-decoration-none font-semibold capitalize'}>projects</NavLink>
+        <NavLink to="/projects" className={({ isActive }) => isActive ? 'bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-semibold capitalize' : 'fw-bold text-decoration-none font-semibold capitalize px-3 py-2'}>projects</NavLink>
 
-        <NavLink to="/about" className={({ isActive }) => isActive ? 'bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-semibold capitalize' : 'fw-bold text-decoration-none font-semibold capitalize'}>about</NavLink>
+        <NavLink to="/about" className={({ isActive }) => isActive ? 'bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-semibold capitalize' : 'fw-bold text-decoration-none font-semibold capitalize px-3 py-2'}>about</NavLink>
 
         <Link to="/">
-            <button className="btn btn-outline btn-success text-black font-normal font-concertOne">
+            <button className="btn btn-outline btn-success text-white font-normal font-concertOne">
                 Hire me
             </button>
         </Link>
@@ -51,7 +51,7 @@ const Navbar = () => {
                             </Link>
                         </div>
                         <div className="hidden md:block">
-                            <div className="ml-10 flex space-x-6 items-center">
+                            <div className="ml-10 flex space-x-4 items-center">
                                 {navOptions}
                                 <label className="swap swap-rotate">
                                     <input type="checkbox" onChange={handleToggle} checked={theme === "light" ? false : true} />
