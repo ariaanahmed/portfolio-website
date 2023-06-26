@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { FaBars, FaMoon, FaSun } from 'react-icons/fa';
+import { Link, NavLink } from 'react-router-dom';
 
 const Navbar = () => {
     const [isMenuOpen, setMenuOpen] = useState(false);
@@ -24,24 +25,33 @@ const Navbar = () => {
     }
 
     const navOptions = <>
-        <a href="#" className="custom-li" > Home </a>
-        <a href="#" className="custom-li" > About </a>
-        <a href="#" className="custom-li" > Services </a>
-        <a href="#" className="custom-li" > Contact </a>
+        <NavLink to='/' className={({ isActive }) => isActive ? 'bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-semibold capitalize' : 'fw-bold text-decoration-none font-semibold capitalize'}>Home</NavLink>
+
+        <NavLink to="/resume" className={({ isActive }) => isActive ? 'bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-semibold capitalize' : 'fw-bold text-decoration-none font-semibold capitalize'}> resume</NavLink>
+
+        <NavLink to="/projects" className={({ isActive }) => isActive ? 'bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-semibold capitalize' : 'fw-bold text-decoration-none font-semibold capitalize'}>projects</NavLink>
+
+        <NavLink to="/about" className={({ isActive }) => isActive ? 'bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-semibold capitalize' : 'fw-bold text-decoration-none font-semibold capitalize'}>about</NavLink>
+
+        <Link to="/">
+            <button className="btn btn-outline btn-success text-black font-normal font-concertOne">
+                Hire me
+            </button>
+        </Link>
     </>
 
     return (
         <nav className='bg-blend-soft-light border-b'>
-            <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+            <div className="mx-auto px-2 sm:px-6 lg:px-10">
                 <div className="relative flex items-center justify-between h-16">
                     <div className="flex items-center justify-between w-full">
                         <div className="flex-shrink-0">
-                            <a href="#" className="font-bold text-lg">
-                                My Logo
-                            </a>
+                            <Link to="/" className="font-bold lowercase text-3xl">
+                                {'<Aria'}<span className="text-sky-500 font-bold">a</span>n{'/>'}
+                            </Link>
                         </div>
                         <div className="hidden md:block">
-                            <div className="ml-10 flex space-x-4 items-center">
+                            <div className="ml-10 flex space-x-6 items-center">
                                 {navOptions}
                                 <label className="swap swap-rotate">
                                     <input type="checkbox" onChange={handleToggle} checked={theme === "light" ? false : true} />
@@ -57,10 +67,10 @@ const Navbar = () => {
                         <button
                             onClick={toggleMenu}
                             type="button"
-                            className="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                            className="bg-gray-50 inline-flex items-center justify-center p-2 rounded-md text-gray-400  hover:text-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
                             aria-controls="mobile-menu"
                             aria-expanded="false">
-                                
+
                             <span className="sr-only">Open main menu</span>
                             {!isMenuOpen ? (
                                 <FaBars className="block h-6 w-6"></FaBars>

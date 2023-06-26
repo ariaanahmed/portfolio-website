@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+       concertOne: ['Concert One', 'cursive'],
+    }
   },
   plugins: [require("daisyui")],
   daisyui: {
