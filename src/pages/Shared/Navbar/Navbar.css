@@ -1,0 +1,25 @@
+.custom-li {
+  position: relative;
+  margin-left: 2.5rem;
+  color: #718096;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: width 0.5s ease-in-out;
+  text-transform: capitalize;
+}
+
+.custom-li::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  border-radius: 0.25rem;
+  transition: width 0.5s ease-in-out;
+  background-color: rgb(124, 123, 123);
+}
+
+.custom-li:hover::after {
+  width: 100%;
+}
