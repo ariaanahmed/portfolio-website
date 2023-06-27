@@ -7,6 +7,7 @@ import Footer from "../pages/Shared/Footer/Footer";
 import Resume from "../pages/Resume/Resume";
 import Projects from "../pages/Projects/Projects";
 import About from "../pages/About/About";
+import Skills from "../pages/Skills/Skills";
 
 export const router = createBrowserRouter([
     {
@@ -28,6 +29,10 @@ export const router = createBrowserRouter([
             {
                 path: '/projects',
                 element: <Projects/>
+            },
+            {
+                path: '/skills',
+                element: <Skills/>
             },
             {
                 path: '/about',
