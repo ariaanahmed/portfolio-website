@@ -35,13 +35,13 @@ const Navbar = () => {
             <NavLink to="/about" className={({ isActive }) => isActive ? 'bg-gray-700 text-white block px-3 py-2 rounded-md font-semibold capitalize' : 'fw-bold text-decoration-none font-semibold capitalize px-3 py-2'}>about</NavLink>
 
             <Link to="/">
-                <button className="btn btn-outline btn-success text-white font-normal font-concertOne mt-3 mb-1 md:mb-0 md:mt-0 ">Hire me</button>
+                <button className="btn btn-outline btn-warning text-white font-normal font-concertOne mt-3 mb-1 md:mb-0 md:mt-0 ">Hire me</button>
             </Link>
         </div>
     </>
 
     return (
-        <nav className='bg-blend-soft-light border-b'>
+        <nav className='bg-blend-soft-light border-b-red-200 shadow-lg'>
             <div className="mx-auto px-2 sm:px-6 lg:px-10">
                 <div className="relative flex items-center justify-between h-16">
                     <div className="flex items-center justify-between w-full">
