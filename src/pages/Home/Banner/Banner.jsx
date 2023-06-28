@@ -13,7 +13,7 @@ const Banner = () => {
     }, [])
     return (
         <div>
-            <div /* data-aos="fade-up" data-aos-anchor-placement="center-center"  */>
+            <div>
                 <div>
                     <div className="flex flex-col md:flex-row-reverse w-full items-center justify-around space-y-8">
                         <div data-aos="fade-left">
