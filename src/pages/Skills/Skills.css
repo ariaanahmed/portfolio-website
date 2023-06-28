@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      margin: 0 auto;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .container {
+      max-width: 960px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1140px;
+    }
+  }
+  
+  @media (min-width: 1400px) {
+    .container {
+      max-width: 1350px;
+    }
+  }
+  
+  .section-title p {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1.5;
+  }
+  
+  .section-title h2 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.5;
+    text-transform: capitalize;
+  }
+  
+  .experience-section {
+    position: relative;
+    padding: 65px 0 100px;
+  }
+  
+  .experience-section .experience-items {
+    display: flex;
+    margin-top: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .experience-item {
+    flex: 0 0 48%;
+    max-width: 48%;
+  }
+  
+  .experience-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  
+  .experience-info p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    opacity: 1;
+    animation: showText 0.5s 1s linear forwards;
+  }
+  
+  .progress-line {
+    margin-top: 7px;
+    height: 10px;
+    width: 100%;
+    background-color: #cdcdcd;
+    border-radius: 50px;
+    position: relative;
+  }
+  
+  .progress-line span {
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 2s cubic-bezier(0.77, 0, 0.175, 1) forwards;
+    height: 100%;
+    border-radius: 50px;
+    position: absolute;
+    background-color: limegreen;
+    transition: 1s all;
+  }
+  
+  .progress-line span.animate {
+    animation: animate 2.5s 0.5s cubic-bezier(0.77, 0, 0.175, 1) forwards;
+  }
+  
+  @keyframes showText {
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes animate {
+    100% {
+      transform: scaleX(1);
+    }
+  }
+  
