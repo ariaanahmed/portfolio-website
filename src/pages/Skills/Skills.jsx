@@ -1,8 +1,15 @@
+import { useEffect } from 'react';
 import './Skills.css';
+import Aos from 'aos';
 
 const Skills = () => {
+
+    useEffect(() => {
+        Aos.init({ duration: 3000 })
+    }, [])
+
     return (
-        <section className="experience-section">
+        <section className="experience-section" data-aos="fade-right">
             <div className="container">
                 <div className='section-title'>
                     <h2 className='capitalize text-center font-bold text-3xl'>Why choose me</h2>
