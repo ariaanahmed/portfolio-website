@@ -11,8 +11,8 @@ const Skills = () => {
     return (
         <section className="experience-section" data-aos="fade-right">
             <div className="container">
-                <div className='section-title'>
-                    <h2 className='capitalize text-center font-bold text-3xl'>Why choose me</h2>
+                <div className='section-title '>
+                    <h2 className='capitalize text-center font-bold text-3xl mb-16'>Why choose me</h2>
                 </div>
 
                 <div className="experience-items flex items-center justify-center">

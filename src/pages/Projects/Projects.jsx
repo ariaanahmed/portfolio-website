@@ -12,9 +12,9 @@ const Projects = () => {
     }, [])
 
     return (
-        <div className='mx-auto mb-10'>
-            <h1 className='capitalize text-center font-bold text-3xl px-3'>Projects By me</h1>
-            <div className='px-2 grid md:grid-cols-3 grid-col-1 gap-2' data-aos="fade-right">
+        <div className='mx-auto mb-16' data-aos="fade-right">
+            <h1 className='capitalize text-center font-bold text-3xl px-3 mt-12 mb-5'>Projects By me</h1>
+            <div className='px-2 grid md:grid-cols-3 grid-col-1 gap-2'>
                 {/* project card one */}
                 <div className="card w-full md:w-96 bg-base-100 shadow-xl mt-10 border mx-auto">
                     <figure className="md:pl-4 md:pt-3 rounded-e-lg rounded-s-lg">
@@ -33,7 +33,7 @@ const Projects = () => {
                             <li>Firebase</li>
                         </ul>
                         <div className="card-actions flex flex-col md:flex-row items-start md:items-center text-center">
-                            <Link to='https://assignment11-8af59.web.app/' target='_blank' className="btn btn-warning">Live Demo</Link>
+                            <Link to='https://assignment11-8af59.web.app/' target='_blank' className="btn bg-warning btn-outline border-0 text-black">Live Demo</Link>
                             <Link to='https://github.com/ariaanahmed/car-store-client' target='_blank' className="btn btn-light btn-outline">Repository</Link>
                         </div>
                     </div>
@@ -56,7 +56,7 @@ const Projects = () => {
                             <li>Firebase</li>
                         </ul>
                         <div className="card-actions flex flex-col md:flex-row items-start md:items-center text-center">
-                            <Link to='https://assignment12-ad3f5.web.app/' target='_blank' className="btn btn-warning">Live Demo</Link>
+                            <Link to='https://assignment12-ad3f5.web.app/' target='_blank' className="btn bg-warning btn-outline border-0 text-black">Live Demo</Link>
                             <Link to='https://github.com/ariaanahmed/sports-camp-client' target='_blank' className="btn btn-light btn-outline">Repository</Link>
                         </div>
                     </div>
@@ -79,7 +79,7 @@ const Projects = () => {
                             <li>Firebase</li>
                         </ul>
                         <div className="card-actions flex flex-col md:flex-row items-start md:items-center text-center">
-                            <Link to='https://assignment10-fb91b.web.app/' target='_blank' className="btn btn-warning">Live Demo</Link>
+                            <Link to='https://assignment10-fb91b.web.app/' target='_blank' className="btn bg-warning btn-outline border-0 text-black">Live Demo</Link>
                             <Link to='https://github.com/ariaanahmed/chef-recipe-hunter-client' target='_blank' className="btn btn-light btn-outline">Repository</Link>
                         </div>
                     </div>

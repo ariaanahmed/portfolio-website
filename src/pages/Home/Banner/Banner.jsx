@@ -42,7 +42,7 @@ const Banner = () => {
                     >React</Typical>
                     </p>
                     <div className="text-center space-x-2 flex-col items-center md:flex-row space-y-4">
-                        <a className="btn btn-warning text-center" href={resume} download={resume}> Resume </a>
+                        <a className="btn bg-warning btn-outline border-0 text-black text-center" href={resume} download={resume}> Resume </a>
                         <Link className="btn btn-light btn-outline text-center"> Project </Link>
                     </div>
                 </div>

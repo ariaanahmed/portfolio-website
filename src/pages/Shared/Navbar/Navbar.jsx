@@ -35,14 +35,14 @@ const Navbar = () => {
             <NavLink to="/about" className={({ isActive }) => isActive ? 'bg-gray-700 text-white block px-3 py-2 rounded-md font-semibold capitalize' : 'fw-bold text-decoration-none font-semibold capitalize px-3 py-2'}>about</NavLink>
 
             <Link to="/">
-                <button className="btn btn-outline btn-warning text-white font-normal font-concertOne mt-3 mb-1 md:mb-0 md:mt-0 ">Hire me</button>
+                <button className="btn bg-warning btn-outline  border-0 text-black font-thin font-concertOne mt-3 mb-1 md:mb-0 md:mt-0">Hire me</button>
             </Link>
         </div>
     </>
 
     return (
-        <nav className=' bg-red-50 bg-opacity-20 backdrop-blur-sm border-b shadow-lg sticky top-0 z-10 w-full'>
-            <div className="mx-auto px-2 sm:px-6 lg:px-10">
+        <nav className=' bg-red-50 bg-opacity-20 backdrop-blur-sm border-b shadow-lg sticky top-0 z-10'>
+            <div className="mx-auto">
                 <div className="relative flex items-center justify-between h-16">
                     <div className="flex items-center justify-between w-full">
                         <div className="flex-shrink-0">
