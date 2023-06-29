@@ -25,7 +25,7 @@ const Navbar = () => {
     }
 
     const navOptions = <>
-        <div className='flex flex-col md:flex-row sm:items-start md:items-center md:space-x-6'>
+        <div className='flex flex-col md:flex-row sm:items-start md:items-center gap-4'>
             <NavLink to='/' className={({ isActive }) => isActive ? 'bg-gray-700 text-white block px-3 py-2 rounded-md font-semibold capitalize' : 'fw-bold text-decoration-none font-semibold capitalize px-3 py-2'}>Home</NavLink>
 
             <NavLink to="/skills" className={({ isActive }) => isActive ? 'bg-gray-700 text-white block px-3 py-2 rounded-md font-semibold capitalize' : 'fw-bold text-decoration-none font-semibold capitalize px-3 py-2'}>skills</NavLink>
@@ -41,8 +41,8 @@ const Navbar = () => {
     </>
 
     return (
-        <nav className=' bg-red-50 bg-opacity-20 backdrop-blur-sm border-b shadow-lg sticky top-0 z-10 px-3 md:px-10'>
-            <div className="mx-auto">
+        <nav className=' bg-red-50 bg-opacity-20 backdrop-blur-sm border-b shadow-lg sticky top-0 z-10'>
+            <div className="mx-auto text-center">
                 <div className="relative flex items-center justify-between h-16">
                     <div className="flex items-center justify-between w-full">
                         <div className="flex-shrink-0">
@@ -51,7 +51,7 @@ const Navbar = () => {
                             </Link>
                         </div>
                         <div className="hidden md:block">
-                            <div className="ml-10 flex space-x-4 items-center">
+                            <div className="flex space-x-4 justify-center items-center">
                                 {navOptions}
                                 <label className="swap swap-rotate">
                                     <input type="checkbox" onChange={handleToggle} checked={theme === "light" ? false : true} />
