@@ -12,7 +12,7 @@ const Banner = () => {
         Aos.init({ duration: 3000 })
     }, [])
     return (
-        <div>
+        <div className="mt-14">
             <div className="flex flex-col md:flex-row-reverse w-full items-center justify-around space-y-8">
                 <div data-aos="fade-left">
                     <Lottie animationData={coding} loop={true} className="ml-auto w-full" /* style={{width: '31rem'}} */ ></Lottie>
@@ -43,7 +43,7 @@ const Banner = () => {
                     </p>
                     <div className="text-center space-x-2 flex-col items-center md:flex-row space-y-4">
                         <a className="btn bg-warning btn-outline border-0 text-black text-center" href={resume} download={resume}> Resume </a>
-                        <Link className="btn btn-light btn-outline text-center"> Project </Link>
+                        <Link to="/projects" className="btn btn-light btn-outline text-center"> Project </Link>
                     </div>
                 </div>
 

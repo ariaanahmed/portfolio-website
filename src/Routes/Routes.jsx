@@ -7,32 +7,37 @@ import Footer from "../pages/Shared/Footer/Footer";
 import Projects from "../pages/Projects/Projects";
 import About from "../pages/About/About";
 import Skills from "../pages/Skills/Skills";
+import NotFoundPage from "../pages/NotFoundPage/NotFoundPage";
 
 export const router = createBrowserRouter([
     {
         path: "/",
-        element: <MainLayout/>,
+        element: <MainLayout />,
         children: [
             {
                 path: "/",
-                element: <Home/>
+                element: <Home />
             },
             {
                 path: '/footer',
-                element: <Footer/>
+                element: <Footer />
             },
             {
                 path: '/projects',
-                element: <Projects/>
+                element: <Projects />
             },
             {
                 path: '/skills',
-                element: <Skills/>
+                element: <Skills />
             },
             {
                 path: '/about',
-                element: <About/>
-            }
+                element: <About />
+            },
         ]
     },
+    {
+        path: '*',
+        element: <NotFoundPage />
+    }
 ]);
