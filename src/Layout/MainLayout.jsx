@@ -3,6 +3,8 @@ import Footer from '../pages/Shared/Footer/Footer';
 import Navbar from '../pages/Shared/Navbar/Navbar';
 import { ClipLoader } from 'react-spinners';
 import { useEffect, useState } from 'react';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const MainLayout = () => {
   const [loading, setLoading] = useState(true);
@@ -33,6 +35,7 @@ const MainLayout = () => {
           <Navbar />
           <Outlet />
           <Footer />
+          <ToastContainer />
         </>
       )}
     </div>
