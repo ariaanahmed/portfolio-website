@@ -34,7 +34,7 @@ const About = () => {
     }, [])
 
     return (
-        <div className='my-20' data-aos="fade-left">
+        <div className='my-20' data-aos="fade-right">
             <div className='mx-auto text-center md:w-8/12'>
                 <img src={ariaan} className='w-40 mx-auto rounded-full border' alt="ariaan-img" />
                 <h1 className='text-center font-bold text-3xl px-3 mt-12 mb-5'>About me</h1>
