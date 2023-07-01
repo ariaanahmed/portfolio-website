@@ -8,7 +8,6 @@ import { useEffect, useRef } from 'react';
 import copy from 'clipboard-copy';
 import Aos from 'aos';
 
-
 const About = () => {
     const copyRef = useRef(null);
 
