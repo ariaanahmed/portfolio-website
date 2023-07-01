@@ -15,7 +15,7 @@ const Skills = () => {
                     <h2 className='capitalize text-center font-bold text-3xl mb-16'>Why choose me</h2>
                 </div>
 
-                <div className="experience-items flex items-center justify-center">
+                <div className="experience-items flex items-center justify-center mb-36">
 
                     <div className="experience-item">
                         <div className="experience-info">

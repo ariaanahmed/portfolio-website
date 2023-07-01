@@ -54,6 +54,7 @@
   .experience-item {
     flex: 0 0 48%;
     max-width: 48%;
+    margin-top: 8px;
   }
   
   .experience-info {

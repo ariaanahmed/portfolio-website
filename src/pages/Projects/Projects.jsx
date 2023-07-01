@@ -25,7 +25,7 @@ const Projects = () => {
                     <div className="card-body w-full">
                         <h2 className="card-title">The Car Store</h2>
                         <p><small className='font-medium'>Technology used</small></p>
-                        <ul className='flex flex-col lg:flex-row items-start md:items-start lg:items-start gap-3 text-xs font-medium'>
+                        <ul className='flex flex-col lg:flex-row items-start gap-3 text-xs font-medium'>
                             <li>React</li>
                             <li>Tailwind</li>
                             <li>MongoDB</li>
@@ -48,7 +48,7 @@ const Projects = () => {
                     <div className="card-body w-full">
                         <h2 className="card-title">The Sport Club</h2>
                         <p><small className='font-medium'>Technology used</small></p>
-                        <ul className='flex flex-col lg:flex-row items-start md:items-start lg:items-start gap-3 text-xs font-medium'>
+                        <ul className='flex flex-col lg:flex-row items-start gap-3 text-xs font-medium'>
                             <li>React</li>
                             <li>Tailwind</li>
                             <li>MongoDB</li>
@@ -71,7 +71,7 @@ const Projects = () => {
                     <div className="card-body w-full">
                         <h2 className="card-title">The Chef Hunt</h2>
                         <p><small className='font-medium'>Technology used</small></p>
-                        <ul className='flex flex-col lg:flex-row items-start md:items-start lg:items-start gap-3 text-xs font-medium'>
+                        <ul className='flex flex-col lg:flex-row items-start gap-3 text-xs font-medium'>
                             <li>React</li>
                             <li>Tailwind</li>
                             <li>MongoDB</li>

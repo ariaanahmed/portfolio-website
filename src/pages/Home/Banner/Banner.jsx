@@ -15,7 +15,7 @@ const Banner = () => {
         <div className="mt-14">
             <div className="flex flex-col md:flex-row-reverse w-full items-center justify-around space-y-8">
                 <div data-aos="fade-left">
-                    <Lottie animationData={coding} loop={true} className="ml-auto w-full" /* style={{width: '31rem'}} */ ></Lottie>
+                    <Lottie animationData={coding} loop={true} className="ml-auto w-full" ></Lottie>
                 </div>
                 <div className="space-y-3" data-aos="fade-right">
                     <h1 className="text-center font-bold text-">
