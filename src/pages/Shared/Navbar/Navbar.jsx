@@ -26,7 +26,7 @@ const Navbar = () => {
     }
 
     const navOptions = <>
-        <div className='flex flex-col md:flex-row sm:items-start md:items-center gap-4'>
+        <div className='flex flex-col md:flex-row items-start md:items-center  gap-4'>
             <NavLink to='/' className={({ isActive }) => isActive ? 'bg-gray-700 text-white block px-3 py-2 rounded-md font-semibold capitalize' : 'fw-bold text-decoration-none font-semibold capitalize px-3 py-2'}>Home</NavLink>
 
             <NavLink to="/skills" className={({ isActive }) => isActive ? 'bg-gray-700 text-white block px-3 py-2 rounded-md font-semibold capitalize' : 'fw-bold text-decoration-none font-semibold capitalize px-3 py-2'}>skills</NavLink>
