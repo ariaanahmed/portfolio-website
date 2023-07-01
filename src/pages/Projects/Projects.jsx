@@ -12,11 +12,11 @@ const Projects = () => {
     }, [])
 
     return (
-        <div className='mx-auto mb-16' data-aos="fade-right">
+        <div className='mx-auto mb-16 lg:w-11/12 md:w-10/12 xl:px-24 pb-2' data-aos="fade-right">
             <h1 className='capitalize text-center font-bold text-3xl px-3 mt-12 mb-5'>Projects By me</h1>
-            <div className='px-2 grid md:grid-cols-3 grid-col-1 gap-2'>
+            <div className='px-2 grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-8 lg:gap-10 justify-between'>
                 {/* project card one */}
-                <div className="card w-full bg-base-100 shadow-xl mt-10 border mx-auto">
+                <div className="card w-full md:w-80 bg-base-100 shadow-xl mt-10 border mx-auto">
                     <figure className="md:pl-4 md:pt-3 rounded-e-lg rounded-s-lg">
                         <div className="overflow-y-scroll h-60 border-black rounded-e-lg rounded-s-lg">
                             <img src={carStoreProjectImg} alt="car-store" className='rounded-e-lg rounded-s-lg w-full' />
@@ -39,7 +39,7 @@ const Projects = () => {
                     </div>
                 </div>
                 {/* project card two */}
-                <div className="card w-full bg-base-100 shadow-xl mt-10 border mx-auto">
+                <div className="card w-full md:w-80 bg-base-100 shadow-xl mt-10 border mx-auto">
                     <figure className="md:pl-4 md:pt-3 rounded-e-lg rounded-s-lg">
                         <div className="overflow-y-scroll h-60 border-black rounded-e-lg rounded-s-lg">
                             <img src={sportclubProjectImg} alt="sport-club" className='rounded-e-lg rounded-s-lg w-full' />
@@ -62,7 +62,7 @@ const Projects = () => {
                     </div>
                 </div>
                 {/* project card three */}
-                <div className="card w-full bg-base-100 shadow-xl mt-10 border mx-auto">
+                <div className="card w-full md:w-80 bg-base-100 shadow-xl mt-10 border mx-auto">
                     <figure className="md:pl-4 md:pt-3 rounded-e-lg rounded-s-lg">
                         <div className="overflow-y-scroll h-60 border-black rounded-e-lg rounded-s-lg">
                             <img src={chefHuntProjectImg} alt="chef-hunt" className='rounded-e-lg rounded-s-lg w-full' />
