@@ -62,7 +62,7 @@ const MainLayout = () => {
             <Navbar />
             <Outlet />
             {backToTopButton && (
-              <button className=' py-2 px-2 border capitalize flex items-center justify-center fixed z-30 bottom-20 md:bottom-14 right-0 gap-3 btn-outline' onClick={backToTop}> <FaArrowUp /> </button>
+              <button className=' py-2 px-2 border capitalize flex items-center justify-center fixed z-30 bottom-14 md:bottom-14 md:right-5 right-0 gap-3 btn-outline' onClick={backToTop}> <FaArrowUp /> </button>
             )}
             <Footer />
             <ToastContainer />

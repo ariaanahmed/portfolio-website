@@ -12,7 +12,7 @@ const Projects = () => {
     }, [])
 
     return (
-        <div className='mx-auto w-11/12 lg:w-11/12 md:w-10/12 xl:px-24 pb-2 mt-8 mb-8' data-aos="fade-right">
+        <div className='mx-auto w-11/12 lg:w-11/12 md:w-10/12 xl:px-24 pb-2 mt-8 mb-8' data-aos="fade-left">
             <h1 className='capitalize text-center font-semibold text-3xl px-3'>Projects By me</h1>
             <div className='px-2 grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-8 lg:gap-10 justify-between mt-8'>
                 {/* project card one */}

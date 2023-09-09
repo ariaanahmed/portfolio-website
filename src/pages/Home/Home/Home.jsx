@@ -8,8 +8,8 @@ const Home = () => {
     return (
         <div className="overflow-hidden">
             <Banner/>
-            <About/>
             <Projects/>
+            <About/>
             <Skills/>
             <Contact/>
         </div>

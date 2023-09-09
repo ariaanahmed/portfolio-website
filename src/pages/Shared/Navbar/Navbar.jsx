@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { FaBars, FaMoon, FaSun } from 'react-icons/fa';
-import { Link, NavLink } from 'react-router-dom';
-import resume from '../../../assets/resume/resume of  arian ahmed.pdf'
+import { Link } from 'react-router-dom';
+import resume from '../../../assets/resume/resume_arian_ahmed.pdf'
 
 const Navbar = () => {
     const [isMenuOpen, setMenuOpen] = useState(false);
@@ -27,18 +27,9 @@ const Navbar = () => {
 
     const navOptions = <>
         <div className='flex flex-col md:flex-row items-start md:items-center  gap-4'>
-            <NavLink to='/' className={({ isActive }) => isActive ? 'bg-gray-700 text-white block px-3 py-2 rounded-md font-semibold capitalize' : 'fw-bold text-decoration-none font-semibold capitalize px-3 py-2'}>Home</NavLink>
-
-            <NavLink to="/skills" className={({ isActive }) => isActive ? 'bg-gray-700 text-white block px-3 py-2 rounded-md font-semibold capitalize' : 'fw-bold text-decoration-none font-semibold capitalize px-3 py-2'}>skills</NavLink>
-
-            <NavLink to="/projects" className={({ isActive }) => isActive ? 'bg-gray-700 text-white block px-3 py-2 rounded-md font-semibold capitalize' : 'fw-bold text-decoration-none font-semibold capitalize px-3 py-2'}>projects</NavLink>
-
-            <NavLink to="/about" className={({ isActive }) => isActive ? 'bg-gray-700 text-white block px-3 py-2 rounded-md font-semibold capitalize' : 'fw-bold text-decoration-none font-semibold capitalize px-3 py-2'}>about</NavLink>
-            
-            <NavLink to="/contact" className={({ isActive }) => isActive ? 'bg-gray-700 text-white block px-3 py-2 rounded-md font-semibold capitalize' : 'fw-bold text-decoration-none font-semibold capitalize px-3 py-2'}>Contact</NavLink>
 
             <a href={resume} download={resume}>
-                <button className="btn bg-warning btn-outline  border-0 text-black font-thin font-concertOne mt-3 mb-1 md:mb-0 md:mt-0">Hire me</button>
+                <button className="btn bg-warning btn-outline  border-0 text-black font-thin font-concertOne mt-3 mb-1 md:mb-0 md:mt-0">Resume</button>
             </a>
 
             <label className="swap swap-rotate">
@@ -64,7 +55,6 @@ const Navbar = () => {
                         <div className="hidden md:block">
                             <div className="flex space-x-4 justify-center items-center">
                                 {navOptions}
-
                             </div>
                         </div>
                     </div>

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Lottie from "lottie-react";
 import coding from '../../../assets/coding.json';
 import Typical from "react-typical";
-import resume from '../../../assets/resume/resume of  arian ahmed.pdf'
+import resume from '../../../assets/resume/resume_arian_ahmed.pdf';
 
 const Banner = () => {
 

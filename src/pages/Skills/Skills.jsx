@@ -9,7 +9,7 @@ const Skills = () => {
     }, [])
 
     return (
-        <section className="experience-section mt-8 w-11/12 md:w-12/12 mx-auto" data-aos="fade-right">
+        <section className="experience-section mt-8 w-11/12 md:w-12/12 mx-auto" data-aos="fade-left">
             <div className="container">
                 <div className='section-title '>
                     <h2 className='capitalize text-center font-semibold text-3xl mt-8'>Why choose me</h2>
