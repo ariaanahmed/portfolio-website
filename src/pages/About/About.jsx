@@ -7,6 +7,7 @@ import { toast } from 'react-toastify';
 import { useEffect, useRef } from 'react';
 import copy from 'clipboard-copy';
 import Aos from 'aos';
+import Skills from '../Skills/Skills';
 
 const About = () => {
     const copyRef = useRef(null);
@@ -57,6 +58,7 @@ const About = () => {
                     <Link to="/projects" className='border border-slate-500 py-2 px-3 rounded-full'> All my projects</Link>
                 </div>
             </div>
+            <Skills/>
         </div>
     );
 };

@@ -4,13 +4,13 @@ import { Link } from "react-router-dom";
 import Lottie from "lottie-react";
 import coding from '../../../assets/coding.json';
 import Typical from "react-typical";
-import resume from '../../../assets/resume/resume_arian_ahmed.pdf';
 
 const Banner = () => {
 
     useEffect(() => {
         Aos.init({ duration: 3000 })
     }, [])
+    
     return (
         <div className="mt-5">
             <div className="flex flex-col md:flex-row-reverse w-full items-center justify-around space-y-8">
@@ -40,7 +40,7 @@ const Banner = () => {
                     >React</Typical>
                     </p>
                     <div className="text-center space-x-2 flex-col items-center md:flex-row space-y-4">
-                        <a className="btn bg-warning btn-outline border-0 text-black text-center" href={resume} download={resume}> Resume </a>
+                        <Link to="/about" className="btn bg-warning btn-outline border-0 text-black text-center"> About me </Link> 
                         <Link to="/projects" className="btn btn-light btn-outline text-center"> Project </Link>
                     </div>
                 </div>

@@ -8,7 +8,7 @@ const Contact = () => {
     }, [])
 
     return (
-        <section className='contact-section mt-8 mb-8' data-aos="fade-right">
+        <section className='contact-section mb-8' data-aos="fade-right">
             <div className='container'>
                 <div className='section-title'>
                     <h2 className='capitalize text-center font-semibold text-3xl'>Contact me</h2>
