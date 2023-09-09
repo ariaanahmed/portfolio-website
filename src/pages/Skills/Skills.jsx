@@ -9,14 +9,12 @@ const Skills = () => {
     }, [])
 
     return (
-        <section className="experience-section" data-aos="fade-right">
+        <section className="experience-section mt-8 w-11/12 md:w-12/12 mx-auto" data-aos="fade-right">
             <div className="container">
                 <div className='section-title '>
-                    <h2 className='capitalize text-center font-bold text-3xl mb-28'>Why choose me</h2>
+                    <h2 className='capitalize text-center font-semibold text-3xl mt-8'>Why choose me</h2>
                 </div>
-
-                <div className="experience-items flex items-center justify-center mb-36">
-
+                <div className="experience-items flex items-center justify-center mt-8">
                     <div className="experience-item">
                         <div className="experience-info">
                             <p>HTML</p>

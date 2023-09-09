@@ -34,6 +34,8 @@ const Navbar = () => {
             <NavLink to="/projects" className={({ isActive }) => isActive ? 'bg-gray-700 text-white block px-3 py-2 rounded-md font-semibold capitalize' : 'fw-bold text-decoration-none font-semibold capitalize px-3 py-2'}>projects</NavLink>
 
             <NavLink to="/about" className={({ isActive }) => isActive ? 'bg-gray-700 text-white block px-3 py-2 rounded-md font-semibold capitalize' : 'fw-bold text-decoration-none font-semibold capitalize px-3 py-2'}>about</NavLink>
+            
+            <NavLink to="/contact" className={({ isActive }) => isActive ? 'bg-gray-700 text-white block px-3 py-2 rounded-md font-semibold capitalize' : 'fw-bold text-decoration-none font-semibold capitalize px-3 py-2'}>Contact</NavLink>
 
             <a href={resume} download={resume}>
                 <button className="btn bg-warning btn-outline  border-0 text-black font-thin font-concertOne mt-3 mb-1 md:mb-0 md:mt-0">Hire me</button>
@@ -50,7 +52,7 @@ const Navbar = () => {
     </>
 
     return (
-        <nav className=' bg-red-50 bg-opacity-20 backdrop-blur-sm shadow-lg sticky top-0 z-10 px-5' style={{borderBottom: '1px solid rgba(0,0,0,0.0)'}}>
+        <nav className='bg-red-50 bg-opacity-20 backdrop-blur-sm shadow-lg sticky top-0 z-10 px-5' style={{borderBottom: '1px solid rgba(0,0,0,0.0)'}}>
             <div className="mx-auto text-center">
                 <div className="relative flex items-center justify-between h-16">
                     <div className="flex items-center justify-between w-full">

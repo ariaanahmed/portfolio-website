@@ -34,12 +34,12 @@ const About = () => {
     }, [])
 
     return (
-        <div className='my-20' data-aos="fade-right">
-            <div className='mx-auto text-center md:w-8/12'>
+        <div data-aos="fade-right">
+            <div className='mx-auto text-center md:w-8/12 mt-8 mb-8'>
                 <img src={ariaan} className='w-40 mx-auto rounded-full border' alt="ariaan-img" />
-                <h1 className='text-center font-bold text-3xl px-3 mt-12 mb-5'>About me</h1>
-                <p>{"I'm"} a passionate MERN stack web developer with expertise in MongoDB, Express.js, React.js, and Node.js. I specialize in crafting immersive web experiences and collaborating with clients to bring their ideas to life. {"Let's"} work together to create remarkable digital solutions.</p>
-                <div className='flex justify-center mt-7 gap-7'>
+                <h1 className='text-center font-semibold text-3xl px-3 mt-8'>About me</h1>
+                <p className='mt-8'>{"I'm"} a passionate MERN stack web developer with expertise in MongoDB, Express.js, React.js, and Node.js. I specialize in crafting immersive web experiences and collaborating with clients to bring their ideas to life. {"Let's"} work together to create remarkable digital solutions.</p>
+                <div className='flex justify-center mt-8 gap-7'>
                     <Link title='facebook' to="https://www.facebook.com/iam.ariaanahmed2.0/" target='_blank'>
                         <FaFacebook className='w-7 h-7' />
                     </Link>
@@ -50,11 +50,11 @@ const About = () => {
                         <FaLinkedin className='w-7 h-7' />
                     </Link>
                 </div>
-                <div className='mt-12 flex flex-col md:flex-row justify-center items-center gap-5'>
+                <div className='mt-8 flex flex-col md:flex-row justify-center items-center gap-5'>
                     <Link ref={copyRef} onClick={handleCopy}>
-                        <span onClick={notify} title='Click to copy' className='border py-2 px-3 rounded-full'>iam.ariaanahmed@gmail.com <MdContentCopy className='inline' /> </span>
+                        <span onClick={notify} title='Click to copy' className='border border-slate-500 py-2 px-3 rounded-full'>iam.ariaanahmed@gmail.com <MdContentCopy className='inline' /> </span>
                     </Link>
-                    <Link to="/projects" className='border py-2 px-3 rounded-full'> All my projects</Link>
+                    <Link to="/projects" className='border border-slate-500 py-2 px-3 rounded-full'> All my projects</Link>
                 </div>
             </div>
         </div>
