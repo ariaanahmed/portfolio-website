@@ -23,7 +23,7 @@ const Projects = () => {
                         </div>
                     </figure>
                     <div className="card-body w-full">
-                        <h2 className="card-title">The Car Store</h2>
+                        <h2 className="card-title">ToyzStore</h2>
                         <p><small className='font-medium'>Technology used</small></p>
                         <ul className='flex flex-col lg:flex-row items-start gap-3 text-xs font-medium'>
                             <li>React</li>
@@ -46,7 +46,7 @@ const Projects = () => {
                         </div>
                     </figure>
                     <div className="card-body w-full">
-                        <h2 className="card-title">The Sport Club</h2>
+                        <h2 className="card-title">A12</h2>
                         <p><small className='font-medium'>Technology used</small></p>
                         <ul className='flex flex-col lg:flex-row items-start gap-3 text-xs font-medium'>
                             <li>React</li>
@@ -69,7 +69,7 @@ const Projects = () => {
                         </div>
                     </figure>
                     <div className="card-body w-full">
-                        <h2 className="card-title">The Chef Hunt</h2>
+                        <h2 className="card-title">Chef N Recipe</h2>
                         <p><small className='font-medium'>Technology used</small></p>
                         <ul className='flex flex-col lg:flex-row items-start gap-3 text-xs font-medium'>
                             <li>React</li>
